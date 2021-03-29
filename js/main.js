@@ -1,5 +1,5 @@
-const $ = ( ele ) => {
-    return document.querySelector( ele );
+const $ = (e) => {
+    return document.querySelector(e);
 };
 
 const toggleNav = () => {
