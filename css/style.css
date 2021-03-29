@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.81);
 }
 
 a {
@@ -29,7 +30,9 @@ a {
 }
 
 .header-brand {
-
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 #nav-drop {
@@ -46,15 +49,56 @@ a {
 
 #nav-drop a {
     padding: 15px;
+    text-align: center;
 }
 
-#header-nav {
+#mobile-nav {
     display: flex;
     justify-content: right;
 }
 
-/*@media (min-width: 768px) {*/
-/*    .head-wrap {*/
-/*        height: 120px;*/
-/*    }*/
-/*}*/
+#nav-list {
+    display: none;
+}
+
+/*Styles for Desktop */
+@media (min-width: 768px) {
+    .head-wrap {
+        height: 120px;
+
+    }
+
+    .header-brand {
+        font-size: 2rem;
+    }
+
+    #mobile-nav {
+        display: none;
+    }
+
+    #nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 350px;
+    }
+    #nav-list a {
+        /*margin-left: 30px;*/
+        font-size: 1.25rem;
+        letter-spacing: 2px;
+    }
+    #nav-list a:hover {
+        color: black;
+        font-weight: bold;
+    }
+
+    .btn-wrap {
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-wrap:hover {
+        border-bottom: 5px rgba(0, 0, 0, 0.8) solid;
+    }
+}
