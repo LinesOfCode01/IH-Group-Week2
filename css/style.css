@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Open Sans', Helvetica, sans-serif;
-    color: rgba(0, 0, 0, 0.81);
+    color: rgba(0, 0, 0, 0.75);
 }
 
 a {
@@ -9,24 +9,23 @@ a {
     text-decoration: none;
 }
 
+.hidden {
+    opacity: 0;
+    height: 0;
+    transition: all 0.3s ease-out;
+}
+
 #hamburger-icon img{
-    height: 24px;
-    width: 24px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 20px;
+     height: 24px;
+     width: 24px;
 }
 
 .head-wrap {
     background-color: #FFF;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
     box-shadow: 0 2px 1px rgba(0,0,0, .1);
     position: relative;
+    padding-bottom: 20px;
 }
 
 .header-brand {
@@ -36,44 +35,64 @@ a {
 }
 
 #nav-drop {
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: none;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.81);
-    color: #FFFFFF;
-    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FFF;
+    overflow: hidden;
 }
-
 
 #nav-drop a {
     padding: 15px;
     text-align: center;
+    letter-spacing: 2px;
+}
+
+.nav-transition {
+    height: 30px;
+    opacity: 1;
+    transition: all 0.3s ease-in;
 }
 
 #mobile-nav {
     display: flex;
-    justify-content: right;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 0px 20px;
 }
 
 #nav-list {
     display: none;
 }
 
+#header-nav .header-brand {
+    display: none;
+}
+
 /*Styles for Desktop */
 @media (min-width: 768px) {
-    .head-wrap {
-        height: 120px;
-
-    }
 
     .header-brand {
         font-size: 2rem;
     }
 
-    #mobile-nav {
+    #mobile-nav, #nav-drop {
         display: none;
+    }
+
+    #header-nav .header-brand {
+        display: block;
+    }
+
+    #header-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .head-wrap {
+        padding-bottom: 0;
     }
 
     #nav-list {
@@ -100,5 +119,6 @@ a {
 
     .btn-wrap:hover {
         border-bottom: 5px rgba(0, 0, 0, 0.8) solid;
+        box-sizing: border-box;
     }
 }
