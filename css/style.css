@@ -11,7 +11,13 @@ a {
     color: inherit;
 }
 
-html, body {
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
     height: 100%;
 }
 
@@ -23,6 +29,10 @@ body {
 
 #main-wrap {
     flex: 1 0 auto;
+}
+
+.hidden {
+    display: none;
 }
 
 /*imgs*/
@@ -45,9 +55,9 @@ body {
 .linkedin-img {
     background: url(../img/linkedin-blk.png) no-repeat center;
 }
-/*.???-img {*/
-/*    background: url(../img/???????-blk.png) #b9b9b9 no-repeat center;*/
-/*}*/
+.medium-img {
+    background: url(../img/medium-blk.png) #b9b9b9 no-repeat center;
+}
 
 .social {
     margin-right: 15px;
@@ -58,10 +68,14 @@ body {
     background-color: #b9b9b9;
 }
 
+.social:hover {
+    cursor: pointer;
+}
+
 /*Home Banner*/
 .banner {
     display: flex;
-    padding-top: 35px;
+    padding-top: 50px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,7 +93,7 @@ body {
 
 
 @media screen and (max-width: 480px) {
-    .banner > .inner .major {
+    .banner>.inner .major {
         width: 100%;
     }
 }
@@ -91,6 +105,7 @@ body {
     position: absolute;
     z-index: 3;
     top: 0;
+    margin-top: 15px;
 }
 
 #top-nav {
@@ -100,7 +115,7 @@ body {
     padding-top: 10px;
 }
 
-#top-nav a{
+#top-nav a {
     font-size: 1.25rem;
     font-weight: 200;
     letter-spacing: 2px;
@@ -108,7 +123,8 @@ body {
     margin-left: 18px;
 }
 
-#top-nav a:hover, #name-pos span:hover{
+#top-nav a:hover,
+#name-pos span:hover {
     color: rgba(46, 46, 46, 0.6);
     cursor: pointer;
     transition: all 0.25s ease;
@@ -132,6 +148,7 @@ body {
 
 #name-pos h1 {
     font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 #name-pos span {
@@ -170,15 +187,48 @@ body {
     width: 100%;
 }
 
+.headShotImage {
+    height: 400px;
+    width: 400px;
+    background-color: aqua;
+    border: red 2px dashed;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#aboutWrapper {
+    width: 400px;
+    margin-left: 30px;
+    border: red 2px dashed;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+#aboutText {
+    border: red 2px dashed;
+    height: 100%;
+    background-color: gray;
+    padding: 15px;
+   }
+
+
+
+.aboutTitle {
+    height: 60px;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+
 .case {
     height: 400px;
-    width: 350px;
+    width: 400px;
     box-shadow: 0 2px 4px 0 #616161;
     clip-path: inset(-1px -1px -5px -1px);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     flex-shrink: 1;
 }
 
@@ -188,16 +238,7 @@ body {
     font-size: 1.5rem;
 }
 
-#ui-hold {
-    margin: 0 10px;
-}
-
-
-
-
-
-
-h1 {
+.case-study h1 {
     font-size: 40px;
 }
 
@@ -306,8 +347,19 @@ footer {
 #copyright {
     font-size: 0.80rem;
     font-weight: 400;
+    opacity: 0.80;
 }
 
+.hamburger-icon {
+    display: none;
+    background: url("../img/menu.png") no-repeat center;
+    background-size: 30px;
+    height: 30px;
+    width: 30px;
+    margin: 0 15px 5px 0;
+}
+
+/*Handle Mobile Styling*/
 @media (max-width: 768px) {
     #top-nav a {
         display: none;
@@ -315,7 +367,76 @@ footer {
     .banner {
         padding-top: 5px;
     }
+
     .banner-content {
         padding: 0;
+        align-content: center;
+    }
+
+    #name-pos {
+        font-size: 1.75rem;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .foot-wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #socials-wrap {
+        margin-bottom: 10px;
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .nav-transition {
+        display: flex;
+        background: rgba(0, 0, 0, 0.80);
+    }
+
+    #mobile-drop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: right;
+    }
+
+    #mobile-drop a {
+        color: #fff;
+        font-size: 2rem;
+        padding: 15px;
+        letter-spacing: 2px;
+    }
+
+    #mobile-drop span {
+        transform: scale(1.5, 1);
+        font-size: 2rem;
+        color: #ff8888;
+        padding: 0 18px 30px;
+    }
+
+    #mid-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mid {
+        padding: 25px;
     }
 }
