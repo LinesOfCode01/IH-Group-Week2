@@ -1,129 +1,161 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
     font-family: 'Open Sans', Helvetica, sans-serif;
-    color: rgba(0, 0, 0, 0.75);
 }
 
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 
-.hidden {
-    opacity: 0;
-    height: 0;
-    transition: all 0.3s ease-out;
+p {
+    margin: 0;
+    padding: 0;
 }
 
-.grey {
-    color: dimgray;
+html, body {
+    height: 100%;
 }
 
-#hamburger-icon img{
-     height: 24px;
-     width: 24px;
-}
-
-.head-wrap {
-    background-color: #FFF;
-    align-items: center;
-    box-shadow: 0 2px 1px rgba(0,0,0, .1);
-    position: relative;
-    padding-bottom: 20px;
-}
-
-.header-brand {
-    font-size: 2rem;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
-
-#nav-drop {
+body {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #FFF;
+    flex-direction: column;
+}
+
+#main-wrap {
+    flex: 1 0 auto;
+}
+
+/*Home Banner*/
+
+.banner {
+    display: flex;
+    padding-top: 45px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 0 !important;
+    cursor: default;
+    position: relative;
     overflow: hidden;
 }
 
-#nav-drop a {
-    padding: 15px;
+.hero-wrap {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 480px) {
+    .banner > .inner .major {
+        width: 100%;
+    }
+}
+
+#top-center {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+}
+
+#top-nav {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+#top-nav a{
+    font-size: 1.25rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-right: 15px;
+    margin-left: 17px;
+}
+
+#top-nav a:hover, #name-pos span:hover{
+    color: rgba(46, 46, 46, 0.6);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#name-pos {
+    display: flex;
+    color: #000;
+    font-size: 3rem;
+    margin: 0 0 5px 15px;
+    letter-spacing: 10px;
+}
+
+#name-pos h1 {
+    font-weight: 400;
+}
+
+#name-pos span {
+    color: #000;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    width: 100%;
+}
+
+.banner-content p{
+    color: #000000;
+    font-size: 1.5rem;
+    width: 60%;
     text-align: center;
     letter-spacing: 2px;
 }
 
-.nav-transition {
-    height: 33px;
-    opacity: 1;
-    transition: all 0.3s ease-in;
+#hero-home {
+    box-shadow: 0 2px 4px 0 #616161;
 }
 
-#mobile-nav {
+/*Mid Section*/
+#mid {
+    padding: 50px;
+}
+
+#mid-wrap {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 20px 0px 20px;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 
-#nav-list {
-    display: none;
+.case {
+    height: 350px;
+    width: 350px;
+    border: red 2px dashed;
 }
 
-#header-nav .header-brand {
-    display: none;
+#ui-hold {
+    margin: 0 30px;
 }
 
-/*Styles for Desktop */
-@media (min-width: 768px) {
-
-    .header-brand {
-        font-size: 3rem;
-    }
-
-    #mobile-nav, #nav-drop {
-        display: none;
-    }
-
-    #header-nav .header-brand {
-        display: block;
-    }
-
-    #header-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .head-wrap {
-        padding-bottom: 0;
-    }
-
-    #nav-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    #nav-list a {
-        margin-left: 25px;
-        font-size: 1.25rem;
-        letter-spacing: 2px;
-    }
-
-    .btn-wrap {
-        height: 60px;
-        display: flex;
-        align-items: center;
-    }
-
-    .btn-wrap:hover {
-        border-bottom: 5px rgba(0, 0, 0, 0.7) solid;
-        box-sizing: border-box;
-        color: rgba(0, 0, 0, 0.7);
-        font-weight: bold;
-    }
-
-    .header-brand:hover {
-        cursor: pointer;
-    }
+footer {
+    border: red 2px dashed;
+    height: 200px;
+    /*bottom: 0;*/
+    flex-shrink: 0;
 }
