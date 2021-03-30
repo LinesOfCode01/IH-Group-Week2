@@ -3,17 +3,12 @@
     padding: 0;
     border: 0;
     font-size: 100%;
-    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-family: 'Open Sans', "Roboto Thin", sans-serif;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-}
-
-p {
-    margin: 0;
-    padding: 0;
 }
 
 html, body {
@@ -23,22 +18,54 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    color: rgba(0, 0, 0, 0.75);
 }
 
 #main-wrap {
     flex: 1 0 auto;
 }
 
-/*Home Banner*/
+/*imgs*/
+.mail-img {
+    background: url(../img/message-blk.png) no-repeat center;
+}
 
+.behance-img {
+    background: url(../img/behance-blk.png) no-repeat center;
+}
+
+.github-img {
+    background: url(../img/github-blk.png) no-repeat center;
+}
+
+.instagram-img {
+    background: url(../img/instagram-blk.png) no-repeat center;
+}
+
+.linkedin-img {
+    background: url(../img/linkedin-blk.png) no-repeat center;
+}
+/*.???-img {*/
+/*    background: url(../img/???????-blk.png) #b9b9b9 no-repeat center;*/
+/*}*/
+
+.social {
+    margin-right: 15px;
+    background-size: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: #b9b9b9;
+}
+
+/*Home Banner*/
 .banner {
     display: flex;
-    padding-top: 45px;
+    padding-top: 35px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 0 !important;
     cursor: default;
     position: relative;
     overflow: hidden;
@@ -77,14 +104,14 @@ body {
     font-size: 1.25rem;
     font-weight: 200;
     letter-spacing: 2px;
-    padding-right: 15px;
-    margin-left: 17px;
+    padding-right: 30px;
+    margin-left: 18px;
 }
 
 #top-nav a:hover, #name-pos span:hover{
     color: rgba(46, 46, 46, 0.6);
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: all 0.25s ease;
 }
 
 #video {
@@ -97,10 +124,10 @@ body {
 
 #name-pos {
     display: flex;
-    color: #000;
+    color: inherit;
     font-size: 3rem;
     margin: 0 0 5px 15px;
-    letter-spacing: 10px;
+    letter-spacing: 2px;
 }
 
 #name-pos h1 {
@@ -108,7 +135,7 @@ body {
 }
 
 #name-pos span {
-    color: #000;
+    color: #000000;
 }
 
 .banner-content {
@@ -120,7 +147,7 @@ body {
 }
 
 .banner-content p{
-    color: #000000;
+    color: inherit;
     font-size: 1.5rem;
     width: 60%;
     text-align: center;
@@ -133,7 +160,7 @@ body {
 
 /*Mid Section*/
 #mid {
-    padding: 50px;
+    padding: 50px 0;
 }
 
 #mid-wrap {
@@ -144,18 +171,27 @@ body {
 }
 
 .case {
-    height: 350px;
+    height: 400px;
     width: 350px;
-    border: red 2px dashed;
+    box-shadow: 0 2px 4px 0 #616161;
+    clip-path: inset(-1px -1px -5px -1px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.case span {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 #ui-hold {
-    margin: 0 30px;
+    margin: 0 10px;
 }
 
-footer {
-    
-}
 
 
 
@@ -199,4 +235,40 @@ h1 {
     padding: 60px;
     font-size: 25px;
     text-align: center;
+}
+
+footer {
+    height: 90px;
+    flex-shrink: 0;
+    padding: 25px 50px;
+    box-shadow: 0 -2px 4px 0 #616161;
+}
+
+.foot-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#socials-wrap {
+    display: flex;
+    justify-content: left;
+}
+
+#copyright {
+    font-size: 0.80rem;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    #top-nav a {
+        display: none;
+    }
+    .banner {
+        padding-top: 5px;
+    }
+    .banner-content {
+        padding: 0;
+    }
 }
