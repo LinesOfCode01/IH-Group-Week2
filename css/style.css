@@ -213,11 +213,11 @@ h1 {
 
 .overview {
     background-image: linear-gradient(rgb(186, 208, 225), rgb(92, 150, 222));
-    padding: 20px 60px;
+    padding: 20px 70px;
 }
 
 .overview-heading {
-    font-size: 25px;
+    font-size: 28px;
 }
 
 .overview p {
@@ -229,12 +229,59 @@ h1 {
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    width: 700px;
+    width: 50%;
     margin: auto;
-    margin-top: 60px;
-    padding: 60px;
-    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px 120px;
+    font-size: 28px;
     text-align: center;
+}
+
+.section-images {
+    background-image: linear-gradient(rgb(161, 196, 222), rgb(80, 113, 154));
+    width: 100%;
+    height: 270px;
+}
+
+.users {
+    padding: 20px 70px;
+    margin: 20px 0;
+}
+
+.users-heading {
+    font-weight: bold;
+}
+
+.users-text {
+    padding-bottom: 20px;
+}
+
+.scope {
+    padding: 20px 70px;
+    margin: 20px 0;
+}
+
+.scope-heading {
+    font-weight: bold;
+}
+
+.process {
+    padding: 20px 70px;
+    margin: 20px 0;
+}
+
+.process-heading {
+    font-weight: bold;
+}
+
+.outcomes {
+    padding: 20px 70px;
+    margin: 20px 0;
+}
+
+.outcomes-heading {
+    font-weight: bold;
 }
 
 footer {
