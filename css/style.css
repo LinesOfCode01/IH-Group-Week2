@@ -154,8 +154,49 @@ body {
 }
 
 footer {
-    border: red 2px dashed;
-    height: 200px;
-    /*bottom: 0;*/
-    flex-shrink: 0;
+    
+}
+
+
+
+
+
+h1 {
+    font-size: 40px;
+}
+
+.case-study {
+    background-image: linear-gradient(rgb(161, 196, 222), rgb(80, 113, 154));
+    width: 100%;
+    height: 270px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview {
+    background-image: linear-gradient(rgb(186, 208, 225), rgb(92, 150, 222));
+    padding: 20px 60px;
+}
+
+.overview-heading {
+    font-size: 25px;
+}
+
+.overview p {
+    padding: 10px 0;
+}
+
+.problem-statement {
+    background-image: linear-gradient(rgb(233, 237, 240), rgb(160, 192, 232));
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 700px;
+    margin: auto;
+    margin-top: 60px;
+    padding: 60px;
+    font-size: 25px;
+    text-align: center;
 }
