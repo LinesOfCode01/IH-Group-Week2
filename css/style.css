@@ -145,34 +145,124 @@ body {
     margin-left: 18px;
 }
 
-/* #top-nav a:hover,
-#name-pos span:hover {
-    color: rgba(46, 46, 46, 0.6);
-    cursor: pointer;
-    transition: all 0.25s ease;
-} */
 
-a.left
+
+
+
+/* Menu Item Hover Underline Effect Desktop Version */
+
+
+
+a.left-home
 {
     position: relative;
 }
 
-a.left:before {
+a.left-home:before {
   content: "";
   position: absolute;
   width: 0;
   height: 2px;
-  bottom: 0;
   left: 0;
   background-color: #FFF;
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
 
-a.left:hover:before {
+a.left-home:hover:before {
     visibility: visible;
-    width: 100%;
+    width: 65%;
   }
+
+  a.left-ux
+{
+    position: relative;
+}
+
+a.left-ux:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left-ux:hover:before {
+    visibility: visible;
+    width: 45%;
+  }
+
+  a.left-ui
+{
+    position: relative;
+}
+
+a.left-ui:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left-ui:hover:before {
+    visibility: visible;
+    width: 40%;
+  }
+
+  a.left-graphic
+{
+    position: relative;
+}
+
+a.left-graphic:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left-graphic:hover:before {
+    visibility: visible;
+    width: 85%;
+  }
+
+  a.left-about
+{
+    position: relative;
+}
+
+a.left-about:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left-about:hover:before {
+    visibility: visible;
+    width: 70%;
+  }
+
+
+/* ///////////////////// */
+
+
+
 
 #video {
     position: absolute;
@@ -478,7 +568,7 @@ footer {
 
     .hamburger-menu-white {
         display: block;
-        z-index: 999;
+        z-index: 998;
     }
 
     #mobile-drop {
