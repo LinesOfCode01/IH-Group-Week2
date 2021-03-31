@@ -41,6 +41,12 @@ body {
 }
 
 /*imgs*/
+
+/*.rafina-rhodes {*/
+/*    background: url("../img/Rafina-rhodes-white.svg") no-repeat;*/
+/*    background-size: 100%;*/
+/*}*/
+
 .mail-img {
     background: url(../img/message-blk.png) no-repeat center;
 }
@@ -379,13 +385,13 @@ footer {
     font-weight: 600;
 }
 
-.hamburger-icon {
+.hamburger-menu-white {
     display: none;
-    background: url("../img/menu.png") no-repeat center;
+    background: url("../img/hamburger-menu-white.svg") no-repeat center;
     background-size: 30px;
     height: 30px;
     width: 30px;
-    margin: 0 15px 5px 0;
+    margin: 5px 15px 5px 0;
     /*padding: 5px 15px 5px 5px;*/
 }
 
@@ -419,7 +425,10 @@ footer {
     }
 
     #name-pos h1{
-        font-size: 2rem;
+        font-family: chuck, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.25rem;
     }
 
     header {
@@ -442,7 +451,7 @@ footer {
         margin-bottom: 10px;
     }
 
-    .hamburger-icon {
+    .hamburger-menu-white {
         display: block;
         z-index: 998;
     }
