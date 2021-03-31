@@ -56,6 +56,7 @@ body {
 .linkedin-img {
     background: url(../img/linkedin-blk.png) no-repeat center;
 }
+
 .medium-img {
     background: url(../img/medium-blk.png) #0f0f0f no-repeat center;
 }
@@ -164,7 +165,7 @@ body {
     width: 100%;
 }
 
-.banner-content p{
+.banner-content p {
     color: inherit;
     font-size: 1.5rem;
     width: 60%;
@@ -191,26 +192,39 @@ body {
 .headShotImage {
     height: 400px;
     width: 400px;
-    background-color: aqua;
-    border: red 2px dashed;
+    box-shadow: 0 2px 4px 0 #616161;
+    clip-path: inset(-1px -1px -5px -1px);
+    background: url("../img/Portrait.png") no-repeat center;
+    background-size: 400px;
+    background-color: black;
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.headShotImage span {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 #aboutWrapper {
     width: 400px;
     margin-left: 30px;
-    border: red 2px dashed;
+    /* box-shadow: 0 2px 4px 0 #616161; */
+    /* border: red 2px dashed; */
     overflow: hidden;
     flex-shrink: 0;
 }
 
 #aboutText {
-    border: red 2px dashed;
     height: 100%;
+    box-shadow: 0 2px 4px 0 #616161;
     background-color: gray;
+    text-align: justify;
     padding: 15px;
-   }
+}
 
 
 
@@ -371,6 +385,7 @@ footer {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -381,6 +396,7 @@ footer {
     #top-nav a {
         display: none;
     }
+
     .banner {
         padding-top: 5px;
     }
@@ -473,5 +489,13 @@ footer {
 
     #mid {
         padding: 25px;
+    }
+
+    #aboutWrapper {
+        margin: 0;
+    }
+
+    .aboutTitle {
+        padding-top: 15px;
     }
 }
