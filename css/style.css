@@ -84,19 +84,10 @@ body {
 }
 
 #ux-pic {
-    /*placeholder*/
-    border-top: 1px rgba(0, 0, 0, 0.3) solid;
-    background-color: #000000;
-    background-size: 200px 200px, 200px 200px, 40px 40px, 40px 40px;
-    background-position: -2px -2px, -2px -2px, -1px 20px, -1px -1px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.0) 1px, transparent 1px),/*up/down*/
-    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px), /*left/right*/
-    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+    background: url("../img/UX-Tile.jpeg") no-repeat center;
 }
-
 #ui-tile-pic {
-    background: url("../img/UI-Tile.png") no-repeat center;
+    background: url("../img/UX-Tile-Audience.png") no-repeat center;
     background-size: 170%;
 }
 
