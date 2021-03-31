@@ -142,7 +142,7 @@ body {
     font-size: 1.25rem;
     font-weight: 200;
     letter-spacing: 2px;
-    padding-right: 30px;
+    margin-right: 30px;
     margin-left: 18px;
 }
 
@@ -465,7 +465,7 @@ footer {
         align-content: center;
     }
 
-    #name-pos h1{
+    #name-pos h1 {
         font-family: chuck, sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -552,7 +552,6 @@ footer {
     #mid {
         padding: 25px;
     }
-<<<<<<< HEAD
 
     #aboutWrapper {
         margin: 0;
@@ -562,10 +561,3 @@ footer {
         padding-top: 15px;
     }
 }
-=======
-}
-
-
-
-
->>>>>>> ac0fa6ff4fb6d5cf093089c1a9d4963052aeaad3
