@@ -357,7 +357,6 @@ footer {
     linear-gradient(90deg, rgba(255,255,255,.0) 1px, transparent 1px),/*up/down*/
     linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px), /*left/right*/
     linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
-    behavior: url(/pie/PIE.htc);
 }
 
 .foot-wrap {
