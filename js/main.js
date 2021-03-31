@@ -26,6 +26,7 @@ window.addEventListener('resize', () =>
 const checkPage = () => document.title.toLowerCase();
 const setAnchorSelected = (page) => {
     let tag = `#${page}`;
+    $(tag).style.borderTop = '2px #fff solid';
     $(tag).style.fontWeight = '600';
 };
 setAnchorSelected(checkPage());
