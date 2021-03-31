@@ -416,7 +416,7 @@ footer {
 
     .hamburger-icon {
         display: block;
-        z-index: 9999;
+        z-index: 998;
     }
 
     #mobile-drop {
