@@ -18,9 +18,12 @@ const toggleNav = () => {
     }
 };
 
+//FOR DEV PURPOSES - Close mobile nav menu if switching to desktop screen size
+window.addEventListener('resize', () =>
+    (window.innerWidth >= 768 || $('#mobile-drop').classList.contains('nav-transition')) ? toggleNav() : false);
+
 //Sets current page's nav bar text to bold
 const checkPage = () => document.title.toLowerCase();
-
 const setAnchorSelected = (page) => {
     let tag = `#${page}`;
     $(tag).style.fontWeight = '600';
