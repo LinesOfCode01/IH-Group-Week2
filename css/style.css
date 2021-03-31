@@ -124,12 +124,34 @@ body {
     margin-left: 18px;
 }
 
-#top-nav a:hover,
+/* #top-nav a:hover,
 #name-pos span:hover {
     color: rgba(46, 46, 46, 0.6);
     cursor: pointer;
     transition: all 0.25s ease;
+} */
+
+a.left
+{
+    position: relative;
 }
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
+  }
 
 #video {
     position: absolute;
@@ -150,10 +172,16 @@ body {
 #name-pos h1 {
     font-weight: 400;
     color: #fff;
+    font-family: chuck, sans-serif;
+font-style: normal;
+font-weight: 400;
 }
 
 #name-pos span {
     color: #ffffff;
+    font-family: chuck, sans-serif;
+font-style: normal;
+font-weight: 400;
 }
 
 .banner-content {
@@ -416,7 +444,7 @@ footer {
 
     .hamburger-icon {
         display: block;
-        z-index: 998;
+        z-index: 999;
     }
 
     #mobile-drop {
@@ -475,3 +503,7 @@ footer {
         padding: 25px;
     }
 }
+
+
+
+
