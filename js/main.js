@@ -6,11 +6,15 @@ const $ = (e) => {
 const toggleNav = () => {
     let x = $('#mobile-drop');
     if (x.classList.contains('nav-transition')) {
-        x.classList.add('hidden');
+        //x.classList.add('hidden');
+        x.style.display = 'none';
         x.classList.remove('nav-transition');
+        x.classList.add('mob-nav');
     } else {
-        x.classList.remove('hidden');
+        //x.classList.remove('hidden');
+        x.style.display = 'flex';
         x.classList.add('nav-transition');
+        x.classList.remove('mob-nav');
     }
 };
 
