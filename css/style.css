@@ -84,9 +84,7 @@ body {
     cursor: pointer;
 }
 
-.ux-pic {
-
-}
+.ux-pic {}
 
 .ui-tile-pic {
     background: url("../img/UI-Tile.png") no-repeat -202px -50px;
@@ -153,27 +151,26 @@ body {
     transition: all 0.25s ease;
 } */
 
-a.left
-{
+a.left {
     position: relative;
 }
 
 a.left:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #FFF;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 a.left:hover:before {
     visibility: visible;
     width: 100%;
-  }
+}
 
 #video {
     position: absolute;
@@ -202,8 +199,8 @@ a.left:hover:before {
 #name-pos span {
     color: #ffffff;
     font-family: chuck, sans-serif;
-font-style: normal;
-font-weight: 400;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .banner-content {
@@ -238,18 +235,21 @@ font-weight: 400;
     width: 100%;
 }
 
+#midAbout {
+    padding: 0px 50px 0px;
+}
+
 .headShotImage {
-    height: 400px;
+    height: 550px;
     width: 400px;
-    box-shadow: 0 2px 4px 0 #616161;
-    clip-path: inset(-1px -1px -5px -1px);
     background: url("../img/Portrait.png") no-repeat center;
-    background-size: 400px;
+    background-size: 500px;
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 1;
+    flex-shrink: 0;
+    overflow: visible;
 }
 
 .headShotImage span {
@@ -260,29 +260,31 @@ font-weight: 400;
 
 #aboutWrapper {
     width: 400px;
-    margin-left: 30px;
-    /* box-shadow: 0 2px 4px 0 #616161; */
-    /* border: red 2px dashed; */
-    overflow: hidden;
+    height: 400px;
+    padding-left: 150px;
+    padding-bottom: 50px;
     flex-shrink: 0;
+    /* border: red 2px dashed; */
+
 }
 
 #aboutText {
-    height: 100%;
-    box-shadow: 0 2px 4px 0 #616161;
-    background-color: gray;
-    text-align: justify;
-    padding: 15px;
+    width: 100%;
+    background-color: black;
+    text-align: left;
+    padding: 0px 15px 15px;
+    line-height: 25px;
+    /* border: red 2px dashed; */
 }
-
-
 
 .aboutTitle {
     height: 60px;
     width: 100%;
     font-size: 2rem;
     text-align: center;
+    padding-top: 50px;
 }
+
 
 .case {
     height: 400px;
@@ -399,9 +401,11 @@ footer {
     background-size: 200px 200px, 200px 200px, 40px 40px, 40px 40px;
     background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
     background-image: linear-gradient(white 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.0) 1px, transparent 1px),/*up/down*/
-    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px), /*left/right*/
-    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+        linear-gradient(90deg, rgba(255, 255, 255, .0) 1px, transparent 1px),
+        /*up/down*/
+        linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+        /*left/right*/
+        linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px);
 }
 
 .foot-wrap {
@@ -465,7 +469,7 @@ footer {
         align-content: center;
     }
 
-    #name-pos h1{
+    #name-pos h1 {
         font-family: chuck, sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -552,7 +556,6 @@ footer {
     #mid {
         padding: 25px;
     }
-<<<<<<< HEAD
 
     #aboutWrapper {
         margin: 0;
@@ -562,10 +565,3 @@ footer {
         padding-top: 15px;
     }
 }
-=======
-}
-
-
-
-
->>>>>>> ac0fa6ff4fb6d5cf093089c1a9d4963052aeaad3
