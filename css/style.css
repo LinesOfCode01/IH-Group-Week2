@@ -139,7 +139,7 @@ body {
 #top-center {
     display: flex;
     justify-content: left;
-    width: 100%;
+
     position: absolute;
     z-index: 3;
     top: 0;
@@ -170,12 +170,12 @@ body {
 
 
 
-a.left-home
+a.left
 {
     position: relative;
 }
 
-a.left-home:before {
+a.left:before {
   content: "";
   position: absolute;
   width: 0;
@@ -186,93 +186,9 @@ a.left-home:before {
   transition: all 0.3s ease-in-out;
 }
 
-a.left-home:hover:before {
+a.left:hover:before {
     visibility: visible;
-    width: 65%;
-  }
-
-  a.left-ux
-{
-    position: relative;
-}
-
-a.left-ux:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  background-color: #FFF;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-a.left-ux:hover:before {
-    visibility: visible;
-    width: 45%;
-  }
-
-  a.left-ui
-{
-    position: relative;
-}
-
-a.left-ui:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  background-color: #FFF;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-a.left-ui:hover:before {
-    visibility: visible;
-    width: 40%;
-  }
-
-  a.left-graphic
-{
-    position: relative;
-}
-
-a.left-graphic:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  background-color: #FFF;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-a.left-graphic:hover:before {
-    visibility: visible;
-    width: 85%;
-  }
-
-  a.left-about
-{
-    position: relative;
-}
-
-a.left-about:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  background-color: #FFF;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-a.left-about:hover:before {
-    visibility: visible;
-    width: 70%;
+    width: 100%;
   }
 
 
@@ -504,11 +420,11 @@ footer {
     height: 90px;
     flex-shrink: 0;
     padding: 25px 50px;
-    border-top: 10px rgba(0, 0, 0, 0) solid;
+    border-top: 1px rgba(0, 0, 0, 0) solid;
     background-color: #000000;
     background-size: 200px 200px, 200px 200px, 40px 40px, 40px 40px;
     background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
-    background-image: linear-gradient(white 1px, transparent 1px),
+    background-image: linear-gradient(white 2px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, .0) 1px, transparent 1px),
         /*up/down*/
         linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
