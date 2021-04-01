@@ -104,7 +104,8 @@ body {
     transform: scale(1.4);
 }
 
-#ux-pic:hover, #ui-tile-pic:hover {
+#ux-pic:hover,
+#ui-tile-pic:hover {
     opacity: 1;
     position: absolute;
     width: 100%;
