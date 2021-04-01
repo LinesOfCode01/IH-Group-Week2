@@ -89,23 +89,7 @@ body {
 #ux-pic {
     background: url("../img/UX-Tile-Audience.jpeg") no-repeat center;
     background-size: cover;
-    transform: scale(1.15);
-}
-
-#ux-pic:hover {
-    opacity: 1;
-    z-index: 53;
-    position: absolute;
-    width: 99%;
-    transform: scale(2.4);
-    background-size: 100%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#ux-hold:hover {
-    overflow: visible;
-    width: auto;
+    transform: scale(1.2);
 }
 
 #ui-tile-pic {
@@ -114,26 +98,30 @@ body {
     transform: scale(1.15);
 }
 
-#ui-tile-pic:hover {
-    opacity: 1;
-    z-index: 53;
-    position: absolute;
-    width: 99%;
-    transform: scale(2.4);
-    background-size: 100%;
-   cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#ui-hold:hover {
-    overflow: visible;
-    width: auto;
-}
-
 #graphic-design-pic {
     background: url("../img/Graphic-Design-tile.jpg") no-repeat center;
     background-size: cover;
-    transform: scale(1.5);
+    transform: scale(1.4);
+}
+
+#ux-pic:hover, #ui-tile-pic:hover {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+#graphic-design-pic:hover {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s ease;
 }
 
 .home-mid-pic {
@@ -806,6 +794,7 @@ footer {
 @media (max-width: 400px) {
     #name-pos h1 {
         font-size: 2.2rem;
+    }
 }
 
 @media (max-width: 686px) {
