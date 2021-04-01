@@ -378,16 +378,25 @@ a.left:hover:before {
 } */
 
 .users {
-    padding: 20px 70px;
-    margin: 20px 0;
+    padding: 40px 70px;
 }
 
 .users-heading {
     font-weight: bold;
 }
 
-.users-text {
+/* .users-text {
     padding-bottom: 20px;
+} */
+
+.section2-image {
+    height: 300px;
+    width: 100%;
+    background: url("./../img/UX-Tile-Audience.jpeg") no-repeat center;
+    background-size: 120%;
+    background-position: top;
+    /* display: flex;
+    justify-content: flex-start; */
 }
 
 .scope {
@@ -615,6 +624,10 @@ footer {
 
     .aboutTitle {
         padding-top: 15px;
+    }
+
+    .section2-image {
+        height: 170px;
     }
 
     .section3-image {
