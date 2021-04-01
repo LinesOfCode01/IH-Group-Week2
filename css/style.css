@@ -860,7 +860,6 @@ footer {
     #mid-wrap {
         flex-direction: column;
         align-items: center;
-        padding-top: 30px;
     }
 
     #mid {
