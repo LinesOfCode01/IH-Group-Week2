@@ -172,26 +172,25 @@ body {
 
 
 
-a.left
-{
+a.left {
     position: relative;
 }
 
 a.left:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  left: 0;
-  background-color: #FFF;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
 a.left:hover:before {
     visibility: visible;
     width: 100%;
-  }
+}
 
 
 /* ///////////////////// */
@@ -372,11 +371,11 @@ a.left:hover:before {
     text-align: center;
 }
 
-.section-images {
+/* .section-images {
     background-image: linear-gradient(rgb(161, 196, 222), rgb(80, 113, 154));
     width: 100%;
     height: 270px;
-}
+} */
 
 .users {
     padding: 20px 70px;
@@ -393,11 +392,20 @@ a.left:hover:before {
 
 .scope {
     padding: 20px 70px;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    background-color: white;
+    color: black;
 }
 
 .scope-heading {
     font-weight: bold;
+}
+
+.section3-image {
+    height: 300px;
+    width: 100%;
+    background: url("./../img/UX-Responsibilities.jpeg") no-repeat center;
+    background-size: 120%;
 }
 
 .process {
@@ -409,13 +417,33 @@ a.left:hover:before {
     font-weight: bold;
 }
 
+.section4-image {
+    height: 300px;
+    width: 100%;
+    background: url("./../img/UX-Process.jpeg") no-repeat center;
+    background-size: 120%;
+}
+
 .outcomes {
     padding: 20px 70px;
-    margin: 20px 0;
+    /* margin: 20px 0; */
+    background-color: white;
+    color: black;
 }
 
 .outcomes-heading {
     font-weight: bold;
+}
+
+.outcomes-heading p {
+    font-weight: bold;
+}
+
+.section5-image {
+    height: 300px;
+    width: 100%;
+    background: url("./../img/UX-Outcome.jpeg") no-repeat center;
+    background-size: 120%;
 }
 
 footer {
@@ -590,5 +618,17 @@ footer {
 
     .aboutTitle {
         padding-top: 15px;
+    }
+
+    .section3-image {
+        height: 170px;
+    }
+
+    .section4-image {
+        height: 170px;
+    }
+
+    .section5-image {
+        height: 170px;
     }
 }
