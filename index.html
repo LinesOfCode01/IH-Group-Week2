@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/jjz5vrp.css">
     <title>Home</title>
 </head>
-<body>
+<body id="home-body">
     <div id="main-wrap">
         <!--Header Start-->
         <div id="mobile-drop" class="mob-nav" style="display: none">
@@ -44,6 +44,8 @@
         </div>
         <!--Nav Title-->
         <section id="hero-home" class="banner" style="background-position: center 0;">
+            <!-- Mobile Menu Icon-->
+            <div class="hamburger-menu-white" onclick="toggleNav()"></div>
             <div class="hero-wrap">
                 <header class="banner-content">
                     <header>
@@ -56,46 +58,41 @@
             <video id="video" autoplay="" muted="" loop="">
                 <source src="img/Header-Video.mp4" type="video/mp4">
             </video>
-            <!-- Mobile Menu Icon-->
-            <div class="hamburger-menu-white" onclick="toggleNav()"></div>
         </section>
 
         <!--Mid Section-->
-        <section id="mid">
+        <section id="mid" class="home">
             <div id="mid-wrap">
                 <div id="ux-hold" class="case">
-                    <div id="ux-pic" class="home-mid-pic">
-                        <div>UX</div>
-                    </div>
+                    <div id="ux-pic" class="home-mid-pic"></div>
+                    <div>UX</div>
                 </div>
                 <div id="ui-hold" class="case">
-                    <div id="ui-tile-pic" class="home-mid-pic">
-                        <div>UI</div>
-                    </div>
+                    <div id="ui-tile-pic" class="home-mid-pic"></div>
+                    <div>UI</div>
                 </div>
                 <div id="graphic-hold" class="case">
-                    <div id="graphic-design-pic" class="home-mid-pic">
-                        <div>Graphic<br>Design</div>
-                    </div>
+                    <div id="graphic-design-pic" class="home-mid-pic"></div>
+                    <div>Graphic<br>Design</div>
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="foot-wrap">
+                <div id="socials-wrap">
+                    <div class="mail-img social"></div>
+                    <div class="behance-img social"></div>
+                    <div class="github-img social"></div>
+                    <div class="instagram-img social"></div>
+                    <div class="linkedin-img social"></div>
+                    <div class="medium-img social"></div>
+                </div>
+                <div id="copyright">
+                    COPYRIGHT 2021, RAFINA RHODES
+                </div>
+            </div>
+        </footer>
     </div>
-    <footer>
-        <div class="foot-wrap">
-            <div id="socials-wrap">
-                <div class="mail-img social"></div>
-                <div class="behance-img social"></div>
-                <div class="github-img social"></div>
-                <div class="instagram-img social"></div>
-                <div class="linkedin-img social"></div>
-                <div class="medium-img social"></div>
-            </div>
-            <div id="copyright">
-                COPYRIGHT 2021, RAFINA RHODES
-            </div>
-        </div>
-    </footer>
 </body>
 <script src="js/main.js"></script>
 </html>

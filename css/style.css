@@ -29,9 +29,12 @@ body {
     color: #fff;
     background: black;
     font-family: 'Overpass';
+    height: 100%;
 }
 
 #main-wrap {
+    display: flex;
+    flex-direction: column;
     flex: 1 0 auto;
 }
 
@@ -85,37 +88,43 @@ body {
 
 #ux-pic {
     background: url("../img/UX-Tile-Audience.jpeg") no-repeat center;
+    background-size: cover;
+    transform: scale(1.15);
 }
 
 #ui-tile-pic {
     background: url("../img/UI-Tile.png") no-repeat center;
-    background-size: 170%;
+    background-size: cover;
+    transform: scale(1.15);
 }
 
 #graphic-design-pic {
-    background: url("../img/Graphic-Design-tile.jpg") no-repeat -85px -50px;
+    background: url("../img/Graphic-Design-tile.jpg") no-repeat center;
+    background-size: cover;
+    transform: scale(1.5);
 }
 
 .home-mid-pic {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: left;
-    align-items: flex-end;
-    position: relative;
-}
+    z-index: 51;
+    opacity: 0.8;
+ }
 
-.home-mid-pic div {
+.case div:nth-child(2) {
     font-family: 'Chuck';
     font-size: 7rem;
     position: absolute;
+    z-index: 51;
     bottom: -22px;
+    left: 0;
     opacity: 1;
 }
 
-#graphic-design-pic div {
+#graphic-hold div:nth-child(2) {
     font-size: 3rem;
     position: absolute;
+    z-index: 51;
     bottom: -10px;
 }
 
@@ -247,12 +256,17 @@ a.left:hover:before {
 }
 
 #hero-home {
+    padding-bottom: 30px;
     margin-left: 50px;
 }
 
 /*Mid Section*/
 #mid {
     padding: 50px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #mid-wrap {
@@ -260,10 +274,11 @@ a.left:hover:before {
     justify-content: center;
     height: 100%;
     width: 100%;
+    flex: 2;
 }
 
 #midAbout {
-    padding: 0px 50px 0px;
+    padding: 0 50px 0;
 }
 
 .headShotImage {
@@ -314,15 +329,13 @@ a.left:hover:before {
 
 
 .case {
-    height: 400px;
     width: 400px;
-    /*box-shadow: 0 2px 4px 0 #616161;*/
-    clip-path: inset(-1px -1px -5px -1px);
     display: flex;
     align-items: center;
     justify-content: center;
-    /*flex-grow: 1;*/
-    flex-shrink: 1;
+    position: relative;
+    flex: 2;
+    overflow: hidden;
 }
 
 .case span {
@@ -432,6 +445,7 @@ footer {
         linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
         /*left/right*/
         linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px);
+    z-index: 91;
 }
 
 .foot-wrap {
@@ -483,6 +497,44 @@ footer {
 
 /*Handle Mobile Styling*/
 @media (max-width: 768px) {
+    .case {
+        width: 100%;
+    }
+
+    #mid.home {
+        padding: 0;
+    }
+
+    #home-body {
+        height: 1200px;
+        width: 100%;
+    }
+
+    #hero-home {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .hero-wrap {
+        position: absolute;
+        bottom: -6px;
+        left: 1px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .case div:nth-child(2) {
+        font-size: 5rem;
+        bottom: -15px;
+    }
+    #ui-tile-pic {
+        background: url("../img/UI-Tile.png") no-repeat center;
+        background-size: 120%;
+        transform: scale(1.15);
+    }
+
     #top-nav a {
         display: none;
     }
@@ -494,13 +546,14 @@ footer {
     .banner-content {
         padding: 0;
         align-content: center;
+        width: auto;
     }
 
     #name-pos h1 {
         font-family: chuck, sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 2.25rem;
+        font-size: 2.5rem;
     }
 
     header {
@@ -524,6 +577,8 @@ footer {
     }
 
     .hamburger-menu-white {
+        position: absolute;
+        right: 0;
         display: block;
         z-index: 998;
     }
@@ -578,6 +633,7 @@ footer {
     #mid-wrap {
         flex-direction: column;
         align-items: center;
+        padding-top: 30px;
     }
 
     #mid {
@@ -590,5 +646,11 @@ footer {
 
     .aboutTitle {
         padding-top: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    #name-pos h1 {
+        font-size: 2.2rem;
     }
 }
