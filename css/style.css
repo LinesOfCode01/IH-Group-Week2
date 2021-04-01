@@ -393,7 +393,7 @@ a.left:hover:before {
     height: 550px;
     width: 400px;
     background: url("../img/Graphic-Design-tile.jpg") no-repeat center;
-    background-size: 500px;
+    background-size: 200%;
     background-color: black;
     display: flex;
     align-items: center;
