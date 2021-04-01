@@ -391,8 +391,7 @@ a.left:hover:before {
 }
 
 .scope {
-    padding: 20px 70px;
-    /* margin: 20px 0; */
+    padding: 40px 70px;
     background-color: white;
     color: black;
 }
@@ -409,8 +408,7 @@ a.left:hover:before {
 }
 
 .process {
-    padding: 20px 70px;
-    margin: 20px 0;
+    padding: 40px 70px;
 }
 
 .process-heading {
@@ -425,8 +423,7 @@ a.left:hover:before {
 }
 
 .outcomes {
-    padding: 20px 70px;
-    /* margin: 20px 0; */
+    padding: 40px 70px;
     background-color: white;
     color: black;
 }
