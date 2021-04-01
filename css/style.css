@@ -89,23 +89,7 @@ body {
 #ux-pic {
     background: url("../img/UX-Tile-Audience.jpeg") no-repeat center;
     background-size: cover;
-    transform: scale(1.15);
-}
-
-#ux-pic:hover {
-    opacity: 1;
-    z-index: 53;
-    position: absolute;
-    width: 99%;
-    transform: scale(2.4);
-    background-size: 100%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#ux-hold:hover {
-    overflow: visible;
-    width: auto;
+    transform: scale(1.2);
 }
 
 #ui-tile-pic {
@@ -114,26 +98,30 @@ body {
     transform: scale(1.15);
 }
 
-#ui-tile-pic:hover {
-    opacity: 1;
-    z-index: 53;
-    position: absolute;
-    width: 99%;
-    transform: scale(2.4);
-    background-size: 100%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#ui-hold:hover {
-    overflow: visible;
-    width: auto;
-}
-
 #graphic-design-pic {
     background: url("../img/Graphic-Design-tile.jpg") no-repeat center;
     background-size: cover;
-    transform: scale(1.5);
+    transform: scale(1.4);
+}
+
+#ux-pic:hover, #ui-tile-pic:hover {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+#graphic-design-pic:hover {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s ease;
 }
 
 .home-mid-pic {
@@ -908,70 +896,53 @@ footer {
     #name-pos h1 {
         font-size: 2.2rem;
     }
+}
 
-    @media (max-width: 686px) {
-        .case-study {
-            height: 290px;
-            overflow: hidden;
-        }
+@media (max-width: 686px) {
 
-        .section2-image {
-            height: 170px;
-        }
+    .section3-image,
+    .section4-image,
+    .section5-image {
+        height: 210px;
+    }
+}
 
-        .section3-image {
-            height: 170px;
-        }
-
-        .case-study h1 {
-            height: 75px;
-            font-size: 1.5rem;
-            margin: 20px;
-        }
-
-        .section3-image,
-        .section4-image,
-        .section5-image {
-            height: 210px;
-        }
+@media (max-width: 585px) {
+    .case-study {
+        height: 210px;
+        overflow: hidden;
     }
 
-    @media (max-width: 585px) {
-        .case-study {
-            height: 210px;
-            overflow: hidden;
-        }
-
-        .case-study h1 {
-            height: 60px;
-            font-size: 1.2rem;
-        }
-
-        .section3-image,
-        .section4-image,
-        .section5-image {
-            height: 170px;
-        }
+    .case-study h1 {
+        height: 60px;
+        font-size: 1.2rem;
     }
 
-    @media (max-width: 496px) {
-        .case-study {
-            height: 200px;
-            overflow: hidden;
-        }
-
-        #name-pos h1 {
-            margin-right: 45px;
-        }
-
-        .case-study h1 {
-            height: 50px;
-            font-size: 1rem;
-        }
-
-        .section3-image,
-        .section4-image,
-        .section5-image {
-            height: 150px;
-        }
+    .section3-image,
+    .section4-image,
+    .section5-image {
+        height: 170px;
     }
+}
+
+@media (max-width: 496px) {
+    .case-study {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    #name-pos h1 {
+        margin-right: 45px;
+    }
+
+    .case-study h1 {
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .section3-image,
+    .section4-image,
+    .section5-image {
+        height: 150px;
+    }
+}
