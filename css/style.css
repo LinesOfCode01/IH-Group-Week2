@@ -382,16 +382,25 @@ a.left:hover:before {
 } */
 
 .users {
-    padding: 20px 70px;
-    margin: 20px 0;
+    padding: 40px 70px;
 }
 
 .users-heading {
     font-weight: bold;
 }
 
-.users-text {
+/* .users-text {
     padding-bottom: 20px;
+} */
+
+.section2-image {
+    height: 300px;
+    width: 100%;
+    background: url("./../img/UX-Tile-Audience.jpeg") no-repeat center;
+    background-size: 120%;
+    background-position: top;
+    /* display: flex;
+    justify-content: flex-start; */
 }
 
 .scope {
@@ -713,10 +722,19 @@ footer {
         overflow: hidden;
     }
 
+<<<<<<< HEAD
+    .section2-image {
+        height: 170px;
+    }
+
+    .section3-image {
+        height: 170px;
+=======
     .case-study h1 {
         height: 75px;
         font-size: 1.5rem;
         margin: 20px;
+>>>>>>> ad7072772ca7fe816df9407198c8eea9f0e59086
     }
 
     .section3-image, .section4-image, .section5-image {
