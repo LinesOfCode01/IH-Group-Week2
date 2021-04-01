@@ -89,23 +89,7 @@ body {
 #ux-pic {
     background: url("../img/UX-Tile-Audience.jpeg") no-repeat center;
     background-size: cover;
-    transform: scale(1.15);
-}
-
-#ux-pic:hover {
-    opacity: 1;
-    z-index: 53;
-    position: absolute;
-    width: 99%;
-    transform: scale(2.4);
-    background-size: 100%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#ux-hold:hover {
-    overflow: visible;
-    width: auto;
+    transform: scale(1.2);
 }
 
 #ui-tile-pic {
@@ -114,26 +98,30 @@ body {
     transform: scale(1.15);
 }
 
-#ui-tile-pic:hover {
-    opacity: 1;
-    z-index: 53;
-    position: absolute;
-    width: 99%;
-    transform: scale(2.4);
-    background-size: 100%;
-   cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-#ui-hold:hover {
-    overflow: visible;
-    width: auto;
-}
-
 #graphic-design-pic {
     background: url("../img/Graphic-Design-tile.jpg") no-repeat center;
     background-size: cover;
-    transform: scale(1.5);
+    transform: scale(1.4);
+}
+
+#ux-pic:hover, #ui-tile-pic:hover {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+
+#graphic-design-pic:hover {
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.3s ease;
 }
 
 .home-mid-pic {
@@ -141,7 +129,7 @@ body {
     height: 100%;
     z-index: 51;
     opacity: 0.8;
- }
+}
 
 .case div:nth-child(2) {
     font-family: 'Chuck';
@@ -308,6 +296,7 @@ a.left:hover:before {
     flex: 2;
 }
 
+/* About Page */
 #midAbout {
     padding: 0 50px 0;
 }
@@ -325,20 +314,12 @@ a.left:hover:before {
     overflow: visible;
 }
 
-.headShotImage span {
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
 #aboutWrapper {
     width: 400px;
     height: 400px;
     padding-left: 150px;
     padding-bottom: 50px;
     flex-shrink: 0;
-    /* border: red 2px dashed; */
-
 }
 
 #aboutText {
@@ -347,7 +328,6 @@ a.left:hover:before {
     text-align: left;
     padding: 0px 15px 15px;
     line-height: 25px;
-    /* border: red 2px dashed; */
 }
 
 .aboutTitle {
@@ -357,6 +337,96 @@ a.left:hover:before {
     text-align: center;
     padding-top: 50px;
 }
+
+/* End of About Page */
+
+/* Ui Page */
+#midUi {
+    padding: 0 50px 0;
+}
+
+.uiPhoto {
+    height: 550px;
+    width: 400px;
+    background: url("../img/UX-Tile-Audience.jpeg") no-repeat center;
+    background-size: 500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+#uiWrapper {
+    width: 400px;
+    height: 400px;
+    padding-left: 150px;
+    padding-bottom: 50px;
+    flex-shrink: 0;
+}
+
+#uiText {
+    width: 100%;
+    background-color: black;
+    text-align: left;
+    padding: 0px 15px 15px;
+    line-height: 25px;
+}
+
+.uiTitle {
+    height: 60px;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* End of Ui Page */
+
+/* Graphic Design Page */
+#midGraphic {
+    padding: 0 50px 0;
+}
+
+.graphicPhoto {
+    height: 550px;
+    width: 400px;
+    background: url("../img/Graphic-Design-tile.jpg") no-repeat center;
+    background-size: 500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+#graphicWrapper {
+    width: 400px;
+    height: 400px;
+    padding-left: 150px;
+    padding-bottom: 50px;
+    flex-shrink: 0;
+}
+
+#graphicText {
+    width: 100%;
+    background-color: black;
+    text-align: left;
+    padding: 0px 15px 15px;
+    line-height: 25px;
+}
+
+.graphicTitle {
+    height: 60px;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* End of Graphic Design Page */
 
 
 .case {
@@ -451,8 +521,6 @@ a.left:hover:before {
     background: url("./../img/UX-Tile-Audience.jpeg") no-repeat center;
     background-size: 120%;
     background-position: top;
-    /* display: flex;
-    justify-content: flex-start; */
 }
 
 .scope {
@@ -673,6 +741,7 @@ footer {
         font-size: 5rem;
         bottom: -15px;
     }
+
     #ui-tile-pic {
         background: url("../img/UI-Tile.png") no-repeat center;
         background-size: 120%;
@@ -818,13 +887,10 @@ footer {
 @media (max-width: 400px) {
     #name-pos h1 {
         font-size: 2.2rem;
+    }
 }
 
 @media (max-width: 686px) {
-    .case-study {
-        height: 290px;
-        overflow: hidden;
-    }
 
     .section2-image {
         height: 170px;
