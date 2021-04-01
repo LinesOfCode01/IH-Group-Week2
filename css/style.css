@@ -129,7 +129,7 @@ body {
     height: 100%;
     z-index: 51;
     opacity: 0.8;
- }
+}
 
 .case div:nth-child(2) {
     font-family: 'Chuck';
@@ -296,6 +296,7 @@ a.left:hover:before {
     flex: 2;
 }
 
+/* About Page */
 #midAbout {
     padding: 0 50px 0;
 }
@@ -313,20 +314,12 @@ a.left:hover:before {
     overflow: visible;
 }
 
-.headShotImage span {
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
 #aboutWrapper {
     width: 400px;
     height: 400px;
     padding-left: 150px;
     padding-bottom: 50px;
     flex-shrink: 0;
-    /* border: red 2px dashed; */
-
 }
 
 #aboutText {
@@ -335,7 +328,6 @@ a.left:hover:before {
     text-align: left;
     padding: 0px 15px 15px;
     line-height: 25px;
-    /* border: red 2px dashed; */
 }
 
 .aboutTitle {
@@ -345,6 +337,96 @@ a.left:hover:before {
     text-align: center;
     padding-top: 50px;
 }
+
+/* End of About Page */
+
+/* Ui Page */
+#midUi {
+    padding: 0 50px 0;
+}
+
+.uiPhoto {
+    height: 550px;
+    width: 400px;
+    background: url("../img/UX-Tile-Audience.jpeg") no-repeat center;
+    background-size: 500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+#uiWrapper {
+    width: 400px;
+    height: 400px;
+    padding-left: 150px;
+    padding-bottom: 50px;
+    flex-shrink: 0;
+}
+
+#uiText {
+    width: 100%;
+    background-color: black;
+    text-align: left;
+    padding: 0px 15px 15px;
+    line-height: 25px;
+}
+
+.uiTitle {
+    height: 60px;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* End of Ui Page */
+
+/* Graphic Design Page */
+#midGraphic {
+    padding: 0 50px 0;
+}
+
+.graphicPhoto {
+    height: 550px;
+    width: 400px;
+    background: url("../img/Graphic-Design-tile.jpg") no-repeat center;
+    background-size: 500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+#graphicWrapper {
+    width: 400px;
+    height: 400px;
+    padding-left: 150px;
+    padding-bottom: 50px;
+    flex-shrink: 0;
+}
+
+#graphicText {
+    width: 100%;
+    background-color: black;
+    text-align: left;
+    padding: 0px 15px 15px;
+    line-height: 25px;
+}
+
+.graphicTitle {
+    height: 60px;
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* End of Graphic Design Page */
 
 
 .case {
@@ -432,8 +514,6 @@ a.left:hover:before {
     background: url("./../img/UX-Tile-Audience.jpeg") no-repeat center;
     background-size: 120%;
     background-position: top;
-    /* display: flex;
-    justify-content: flex-start; */
 }
 
 .scope {
@@ -556,31 +636,46 @@ footer {
 
 
 @media (min-width: 985px) {
-    .section3-image, .section4-image, .section5-image {
+
+    .section3-image,
+    .section4-image,
+    .section5-image {
         height: 400px;
     }
 }
 
 @media (min-width: 1300px) {
-    .section3-image, .section4-image, .section5-image {
+
+    .section3-image,
+    .section4-image,
+    .section5-image {
         height: 450px;
     }
 }
 
 @media (min-width: 1500px) {
-    .section3-image, .section4-image, .section5-image {
+
+    .section3-image,
+    .section4-image,
+    .section5-image {
         height: 500px;
     }
 }
 
 @media (min-width: 1650px) {
-    .section3-image, .section4-image, .section5-image {
+
+    .section3-image,
+    .section4-image,
+    .section5-image {
         height: 600px;
     }
 }
 
 @media (min-width: 2000px) {
-    .section3-image, .section4-image, .section5-image {
+
+    .section3-image,
+    .section4-image,
+    .section5-image {
         height: 750px;
     }
 }
@@ -654,6 +749,7 @@ footer {
         font-size: 5rem;
         bottom: -15px;
     }
+
     #ui-tile-pic {
         background: url("../img/UI-Tile.png") no-repeat center;
         background-size: 120%;
@@ -778,6 +874,11 @@ footer {
     .aboutTitle {
         padding-top: 15px;
     }
+
+    .section2-image {
+        height: 240px;
+    }
+
     .section3-image {
         height: 240px;
     }
@@ -798,26 +899,10 @@ footer {
 }
 
 @media (max-width: 686px) {
-    .case-study {
-        height: 290px;
-        overflow: hidden;
-    }
 
-    .section2-image {
-        height: 170px;
-    }
-
-    .section3-image {
-        height: 170px;
-    }
-    
-    .case-study h1 {
-        height: 75px;
-        font-size: 1.5rem;
-        margin: 20px;
-    }
-
-    .section3-image, .section4-image, .section5-image {
+    .section3-image,
+    .section4-image,
+    .section5-image {
         height: 210px;
     }
 }
@@ -833,7 +918,9 @@ footer {
         font-size: 1.2rem;
     }
 
-    .section3-image, .section4-image, .section5-image {
+    .section3-image,
+    .section4-image,
+    .section5-image {
         height: 170px;
     }
 }
@@ -853,7 +940,9 @@ footer {
         font-size: 1rem;
     }
 
-    .section3-image, .section4-image, .section5-image {
+    .section3-image,
+    .section4-image,
+    .section5-image {
         height: 150px;
     }
 }
