@@ -83,7 +83,9 @@ body {
     cursor: pointer;
 }
 
-#ux-pic {}
+#ux-pic {
+    background: url("../img/UX-Tile-Audience.jpeg") no-repeat center;
+}
 
 #ui-tile-pic {
     background: url("../img/UI-Tile.png") no-repeat center;
