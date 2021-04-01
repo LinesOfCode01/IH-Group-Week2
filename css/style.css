@@ -407,16 +407,23 @@ a.left:hover:before {
 }
 
 .problem-statement {
-    background-image: linear-gradient(rgb(233, 237, 240), rgb(160, 192, 232));
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #f9fbff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) .2px, transparent .2px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0) 1px, transparent 1px),
+    /*up/down*/
+    linear-gradient(rgba(0, 0, 0, 0.3) 1px, transparent 1px),
+    /*left/right*/
+    linear-gradient(90deg, rgba(0, 0, 0, 0.3) 1px, transparent 1px);
+    background-size: 200px 200px, 200px 200px, 40px 40px, 40px 40px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
     width: 50%;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 40px 120px;
     font-size: 28px;
+    font-family: 'Overpass Mono';
+    color: #0f0f0f;
     text-align: center;
 }
 
@@ -510,7 +517,7 @@ footer {
     background-size: 200px 200px, 200px 200px, 40px 40px, 40px 40px;
     background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
     background-image: linear-gradient(#f9fbff 2px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, .0) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(228, 13, 13, 0) 1px, transparent 1px),
         /*up/down*/
         linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
         /*left/right*/
@@ -568,31 +575,31 @@ footer {
 
 
 @media (min-width: 985px) {
-    .section3-image, .section4-image, .section5-image {
+    .section2-image, .section3-image, .section4-image, .section5-image {
         height: 400px;
     }
 }
 
 @media (min-width: 1300px) {
-    .section3-image, .section4-image, .section5-image {
+    .section2-image, .section3-image, .section4-image, .section5-image {
         height: 450px;
     }
 }
 
 @media (min-width: 1500px) {
-    .section3-image, .section4-image, .section5-image {
+    .section2-image, .section3-image, .section4-image, .section5-image {
         height: 500px;
     }
 }
 
 @media (min-width: 1650px) {
-    .section3-image, .section4-image, .section5-image {
+    .section2-image, .section3-image, .section4-image, .section5-image {
         height: 600px;
     }
 }
 
 @media (min-width: 2000px) {
-    .section3-image, .section4-image, .section5-image {
+    .section2-image, .section3-image, .section4-image, .section5-image {
         height: 750px;
     }
 }
@@ -790,6 +797,11 @@ footer {
     .aboutTitle {
         padding-top: 15px;
     }
+
+    .section2-image {
+        height: 240px;
+    } 
+
     .section3-image {
         height: 240px;
     }
@@ -828,7 +840,7 @@ footer {
         margin: 20px;
     }
 
-    .section3-image, .section4-image, .section5-image {
+    .section2-image, .section3-image, .section4-image, .section5-image {
         height: 210px;
     }
 }
@@ -844,7 +856,7 @@ footer {
         font-size: 1.2rem;
     }
 
-    .section3-image, .section4-image, .section5-image {
+    .section2-image, .section3-image, .section4-image, .section5-image {
         height: 170px;
     }
 }
@@ -864,7 +876,7 @@ footer {
         font-size: 1rem;
     }
 
-    .section3-image, .section4-image, .section5-image {
+    .section2-image, .section3-image, .section4-image, .section5-image {
         height: 150px;
     }
 }
