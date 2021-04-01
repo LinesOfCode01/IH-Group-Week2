@@ -722,19 +722,18 @@ footer {
         overflow: hidden;
     }
 
-<<<<<<< HEAD
     .section2-image {
         height: 170px;
     }
 
     .section3-image {
         height: 170px;
-=======
+    }
+    
     .case-study h1 {
         height: 75px;
         font-size: 1.5rem;
         margin: 20px;
->>>>>>> ad7072772ca7fe816df9407198c8eea9f0e59086
     }
 
     .section3-image, .section4-image, .section5-image {
