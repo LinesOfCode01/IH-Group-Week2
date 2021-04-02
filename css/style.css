@@ -780,7 +780,7 @@ footer {
 
     #ui-tile-pic {
         background: url("../img/UI-Tile.png") no-repeat center;
-        background-size: 100%;
+        background-size: cover;
         transform: none;
     }
 
