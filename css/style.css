@@ -715,7 +715,11 @@ footer {
 /*Handle Mobile Styling*/
 @media (max-width: 768px) {
     #home-map {
-        margin: 0 15px 15px 0;
+        margin: 0 15px 8px 0;
+    }
+    .home-mid-pic {
+        width: 400px;
+        height: 400px;
     }
 
     .mobile-map {
@@ -723,9 +727,9 @@ footer {
         position: absolute;
         right: 0;
         bottom: 0;
-        font-family: 'Overpass Mono';
+        font-family: 'Overpass';
         font-size: 2rem;
-        margin: 0 15px 35px 0;
+        margin: 0 15px 26px 0;
     }
 
     #name-pos {
@@ -884,6 +888,7 @@ footer {
 
     #aboutWrapper {
         margin: 0;
+        padding-left: 0;
     }
 
     .aboutTitle {
