@@ -34,20 +34,3 @@ const setAnchorSelected = (page) => {
     $('.mobile-map').innerHTML = `${a}`;
 };
 setAnchorSelected(checkPage());
-
-function rg(m, n) {
-    return Math.floor( Math.random() * (n - m + 1) ) + m;
-}
-
-function hex(i) {
-    return i.toString(16);
-}
-
-function randColor() {
-    return '#' + hex(rg(1, 15)) + hex(rg(1, 15)) + hex(rg(1, 15)) +
-        hex(rg(1, 15)) + hex(rg(1, 15)) + hex(rg(1, 15));
-}
-
-$(".social").mouseover(function() {
-    $(this).css("background-color",randColor());
-});
