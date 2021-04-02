@@ -709,7 +709,6 @@ footer {
     }
 }
 
-
 @media (max-width: 1041px) {
     .case-study {
         height: 400px;
@@ -754,6 +753,19 @@ footer {
 
 /*Handle Mobile Styling*/
 @media (max-width: 768px) {
+    #midAbout {
+        display: block;
+        flex-direction: unset;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .headShotImage {
+        height: 550px;
+        width: 400px;
+        background-size: 500px;
+    }
+
     #home-map {
         margin: 0 15px 8px 0;
     }
@@ -932,6 +944,7 @@ footer {
     #mid-wrap {
         flex-direction: column;
         align-items: center;
+        height: unset;
     }
 
     #mid {
@@ -941,10 +954,15 @@ footer {
     #aboutWrapper {
         margin: 0;
         padding-left: 0;
+        width: 400px;
     }
 
     .aboutTitle {
         padding-top: 15px;
+    }
+
+    .aboutTitle {
+        padding-bottom: 0;
     }
 
     .section2-image {
