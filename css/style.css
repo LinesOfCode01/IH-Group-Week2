@@ -111,7 +111,8 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-#ux-pic:hover, #ui-tile-pic:hover {
+#ux-pic:hover,
+#ui-tile-pic:hover {
     opacity: 1;
     position: absolute;
     width: 100%;
@@ -483,6 +484,10 @@ a.left:hover:before {
     color: #0f0f0f;
 }
 
+.mobile-map{
+    display: none;
+}
+
 .problem-statement {
     background-color: #f9fbff;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3) .2px, transparent .2px),
@@ -716,6 +721,24 @@ footer {
 
 /*Handle Mobile Styling*/
 @media (max-width: 768px) {
+    #home-map {
+        margin: 0 15px 15px 0;
+    }
+
+    .mobile-map {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-family: 'Overpass Mono';
+        font-size: 2rem;
+        margin: 0 15px 35px 0;
+    }
+
+    #name-pos {
+        width: 200px;
+    }
+
     .case {
         width: 100%;
     }
@@ -730,7 +753,7 @@ footer {
     }
 
     #hero-home {
-        height: 120px;
+        height: 100px;
         display: flex;
         flex-direction: column;
         margin: 0;
@@ -738,10 +761,10 @@ footer {
 
     .hero-wrap {
         position: absolute;
-        bottom: -6px;
         left: 1px;
         display: flex;
-        justify-content: center;
+        justify-content: left;
+        padding-top: 5px;
     }
 
     .case div:nth-child(2) {
@@ -805,6 +828,7 @@ footer {
     .hamburger-menu-white {
         position: absolute;
         right: 0;
+        margin-top: 12px;
         display: block;
         z-index: 998;
     }
@@ -859,7 +883,6 @@ footer {
     #mid-wrap {
         flex-direction: column;
         align-items: center;
-        padding-top: 30px;
     }
 
     #mid {
@@ -888,12 +911,6 @@ footer {
 
     .section5-image {
         height: 240px;
-    }
-}
-
-@media (max-width: 400px) {
-    #name-pos h1 {
-        font-size: 2.2rem;
     }
 }
 
