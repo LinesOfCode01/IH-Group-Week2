@@ -304,6 +304,11 @@ a.left:hover:before {
     flex: 2;
 }
 
+#mid-wrap.not-aligned {
+    align-items: unset;
+    width: 100%;
+}
+
 /* About Page */
 #midAbout {
     padding: 0 50px 0;
@@ -945,6 +950,11 @@ footer {
         flex-direction: column;
         align-items: center;
         height: unset;
+    }
+
+    #mid-wrap.not-aligned {
+        align-items: unset;
+
     }
 
     #mid {
