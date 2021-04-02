@@ -735,6 +735,8 @@ footer {
         right: 0;
         bottom: 0;
         font-family: 'Overpass';
+        text-shadow: 1px 1px;
+        font-weight: 600;
         font-size: 2rem;
         margin: 0 15px 26px 0;
     }
@@ -752,7 +754,7 @@ footer {
     }
 
     #home-body {
-        height: 1200px;
+        height: 1460px;
         width: 100%;
     }
 
@@ -826,6 +828,7 @@ footer {
     footer {
         justify-content: center;
         padding: 10px;
+        height: 120px;
     }
 
     .foot-wrap {
