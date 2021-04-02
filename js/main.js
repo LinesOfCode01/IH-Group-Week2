@@ -28,5 +28,9 @@ const setAnchorSelected = (page) => {
     let tag = `#${page}`;
     $(tag).style.borderTop = '2px #fff solid';
     $(tag).style.fontWeight = '600';
+    $(tag).removeAttribute('class');
+    let a = document.title.toUpperCase();
+    console.log(a);
+    $('.mobile-map').innerHTML = `${a}`;
 };
 setAnchorSelected(checkPage());
