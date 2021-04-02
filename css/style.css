@@ -774,9 +774,18 @@ footer {
 
     #ui-tile-pic {
         background: url("../img/UI-Tile.png") no-repeat center;
-        background-size: 120%;
-        transform: scale(1.15);
+        background-size: 100%;
+        transform: none;
     }
+
+    #ux-pic,
+    #ui-tile-pic, #graphic-design-pic {
+    transform: none;
+    transition: none;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+}
 
     #top-nav a {
         display: none;
