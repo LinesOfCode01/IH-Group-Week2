@@ -44,11 +44,6 @@ body {
 
 /*imgs*/
 
-/*.rafina-rhodes {*/
-/*    background: url("../img/Rafina-rhodes-white.svg") no-repeat;*/
-/*    background-size: 100%;*/
-/*}*/
-
 .mail-img {
     background: url(../img/message-blk.png) no-repeat center;
 }
@@ -157,6 +152,7 @@ body {
 }
 
 /*Home Banner*/
+
 .banner {
     display: flex;
     padding-top: 50px;
@@ -202,12 +198,7 @@ body {
 }
 
 
-
-
-
 /* Menu Item Hover Underline Effect Desktop Version */
-
-
 
 a.left {
     position: relative;
@@ -233,7 +224,7 @@ a.left:hover:before {
 /* ///////////////////// */
 
 
-
+/* video nav bar */
 
 #video {
     position: absolute;
@@ -246,8 +237,7 @@ a.left:hover:before {
 #name-pos {
     display: flex;
     color: inherit;
-    font-size: 3rem;
-    /*margin: 0 0 5px 15px;*/
+    font-size: 3rem;    
     letter-spacing: 2px;
 }
 
@@ -288,6 +278,7 @@ a.left:hover:before {
 }
 
 /*Mid Section*/
+
 #mid {
     padding: 50px 0;
     height: 100%;
@@ -310,6 +301,7 @@ a.left:hover:before {
 }
 
 /* About Page */
+
 #midAbout {
     padding: 0 50px 0;
     display: flex;
@@ -359,6 +351,7 @@ a.left:hover:before {
 /* End of About Page */
 
 /* Ui Page */
+
 #midUi {
     padding: 0 50px 0;
 }
@@ -403,6 +396,7 @@ a.left:hover:before {
 /* End of Ui Page */
 
 /* Graphic Design Page */
+
 #midGraphic {
     padding: 0 50px 0;
 }
@@ -519,11 +513,6 @@ a.left:hover:before {
     text-align: center;
 }
 
-/* .section-images {
-    background-image: linear-gradient(rgb(161, 196, 222), rgb(80, 113, 154));
-    width: 100%;
-    height: 270px;
-} */
 
 .users {
     padding: 40px 70px;
@@ -532,10 +521,6 @@ a.left:hover:before {
 .users-heading {
     font-weight: bold;
 }
-
-/* .users-text {
-    padding-bottom: 20px;
-} */
 
 .section2-image {
     height: 300px;
@@ -642,8 +627,7 @@ footer {
     background-size: 30px;
     height: 30px;
     width: 30px;
-    margin: 5px 15px 5px 0;
-    /*padding: 5px 15px 5px 5px;*/
+    margin: 5px 15px 5px 0;  
 }
 
 
@@ -757,6 +741,7 @@ footer {
 
 
 /*Handle Mobile Styling*/
+
 @media (max-width: 768px) {
     #midAbout {
         display: block;

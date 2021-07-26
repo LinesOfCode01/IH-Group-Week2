@@ -7,88 +7,99 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/jjz5vrp.css">
-    <title>Graphic</title>
+    <title>Home</title>
 </head>
-<body>
-<div id="main-wrap">
-    <!--Header Start-->
-    <div id="mobile-drop" class="mob-nav" style="display: none">
-        <div id="x-contain">
-            <span onclick="toggleNav()">X</span>
-        </div>
-        <div class="mobile-select mobile-select-home">
-            <a id="mobile-home-nav" href="index.html">HOME</a>
-        </div>
-        <div class="mobile-select">
-            <a href="ui.html">UI</a>
-        </div>
-        <div class="mobile-select">
-            <a href="ux.html">UX</a>
-        </div>
-        <div class="mobile-select">
-            <a href="graphic.html">GRAPHIC DESIGN</a>
-        </div>
-        <div class="mobile-select">
-            <a href="about.html">ABOUT</a>
-        </div>
-    </div>
-    <!--Desktop Header-->
-    <div id="top-center">
-        <div id="top-nav">
-            <a id="home" href="index.html">HOME</a>
-            <a id="ux" href="ux.html">UX</a>
-            <a id="ui" href="ui.html">UI</a>
-            <a id="graphic" href="graphic.html">GRAPHIC DESIGN</a>
-            <a id="about" href="about.html">ABOUT</a>
-        </div>
-    </div>
-    <!--Nav Title-->
-    <section id="hero-home" class="banner" style="background-position: center 0;">
-        <div class="hero-wrap">
-            <header class="banner-content">
-                <header>
-                    <div id="name-pos">
-                        <h1><span>RAFINA</span> RHODES</h1>
-                    </div>
-                </header>
-            </header>
-        </div>
-        <video id="video" autoplay="" muted="" loop="">
-            <source src="img/Header-Video.mp4" type="video/mp4">
-        </video>
-        <!-- Mobile Menu Icon-->
-        <div class="hamburger-menu-white" onclick="toggleNav()"></div>
-    </section>
-    <!-- End of Header -->
-
-    <section id="midGraphic">
-        <div id="mid-wrap">
-            <div id="graphicImage" class="graphicPhoto"></div>
-            <div id="graphicWrapper">
-                <div class="graphicTitle"><H1>GRAPHIC DESIGN CASE STUDY</H1></div>
-                <div id="graphicText" class="graphicDescription">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p> <br> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                </div>
+<body id="home-body">
+    <div id="main-wrap">
+        <!--Header Start-->
+        <div id="mobile-drop" class="mob-nav" style="display: none">
+            <div id="x-contain">
+                <span onclick="toggleNav()">X</span>
+            </div>
+            <div class="mobile-select mobile-select-home">
+                <a id="mobile-home-nav" href="index.html">HOME</a>
+            </div>
+            <div class="mobile-select">
+                <a href="ux.html">UI</a>
+            </div>
+            <div class="mobile-select">
+                <a href="ux.html">UX</a>
+            </div>
+            <div class="mobile-select">
+                <a href="ux.html">GRAPHIC DESIGN</a>
+            </div>
+            <div class="mobile-select">
+                <a href="about.html">ABOUT</a>
             </div>
         </div>
-    </section>
+        <!--Desktop Header-->
+        <div id="top-center">
+            <div id="top-nav">
+                <a id="home" class="left" href="index.html">HOME</a>
+                <a id="ux" class="left" href="ux.html">UX</a>
+                <a id="ui" class="left" href="ux.html">UI</a>
+                <a id="graphic" class="left" href="ux.html">GRAPHIC DESIGN</a>
+                <a id="about" class="left" href="about.html">ABOUT</a>
+            </div>
+        </div>
+        <!--Nav Title-->
+        <section id="hero-home" class="banner" style="background-position: center 0;">
+            <div class="hero-wrap">
+                <header class="banner-content">
+                    <header>
+                        <div id="name-pos">
+                            <h1><span>RAFINA</span> RHODES</h1>
+                        </div>
+                    </header>
+                </header>
+            </div>
+            <video id="video" muted="">
+                <source src="img/Header-Video.mp4" type="video/mp4">
+            </video>
+            <!-- Mobile Menu Icon-->
+            <div class="hamburger-menu-white" onclick="toggleNav()"></div>
+            <div id="home-map" class="mobile-map"></div>
+        </section>
 
-</div>
-<footer>
-    <div class="foot-wrap">
-        <div id="socials-wrap">
-            <div class="mail-img social"></div>
-            <div class="behance-img social"></div>
-            <div class="github-img social"></div>
-            <div class="instagram-img social"></div>
-            <div class="linkedin-img social"></div>
-            <div class="medium-img social"></div>
-        </div>
-        <div id="copyright">
-            COPYRIGHT 2021, RAFINA RHODES
-        </div>
+        <!--Mid Section-->
+        <section id="mid" class="home">
+            <div id="mid-wrap" class="not-aligned">
+                <div id="ux-hold" class="case">
+                    <a href="ux.html" style="width: 100%; height: 100%">
+                        <div id="ux-pic" class="home-mid-pic"></div>
+                        <div>UX</div>
+                    </a>
+                </div>
+                <div id="ui-hold" class="case">
+                    <a href="ux.html" style="width: 100%; height: 100%">
+                        <div id="ui-tile-pic" class="home-mid-pic"></div>
+                        <div>UI</div>
+                    </a>
+                </div>
+                <div id="graphic-hold" class="case">
+                    <a href="ux.html" style="width: 100%; height: 100%">
+                        <div id="graphic-design-pic" class="home-mid-pic"></div>
+                        <div>Graphic<br>Design</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="foot-wrap">
+                <div id="socials-wrap">
+                    <div class="mail-img social"></div>
+                    <div class="behance-img social"></div>
+                    <div class="github-img social"></div>
+                    <div class="instagram-img social"></div>
+                    <div class="linkedin-img social"></div>
+                    <div class="medium-img social"></div>
+                </div>
+                <div id="copyright">
+                    COPYRIGHT 2021, RAFINA RHODES
+                </div>
+            </div>
+        </footer>
     </div>
-</footer>
 </body>
 <script src="js/main.js"></script>
 </html>

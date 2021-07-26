@@ -5,13 +5,11 @@ const $ = (e) => {
 //Transition Handler for mobile nav
 const toggleNav = () => {
     let x = $('#mobile-drop');
-    if (x.classList.contains('nav-transition')) {
-        // x.classList.add('hidden');
+    if (x.classList.contains('nav-transition')) {        
         x.style.display = 'none';
         x.classList.remove('nav-transition');
         
-    } else {
-        //x.classList.remove('hidden');
+    } else {        
         x.style.display = 'flex';
         x.classList.add('nav-transition');
         
